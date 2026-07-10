@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 640" fill="none" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+  <!-- Original plan-view / survey linework: modular grid, contour rings, alignment marks.
+       Rendered faint on ink backgrounds. Evokes engineering & site planning, no cliché. -->
+  <defs>
+    <pattern id="ags-grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1440" height="640" fill="url(#ags-grid)"/>
+
+  <!-- Contour rings (topographic) -->
+  <g stroke="#D9B892" stroke-opacity="0.22" stroke-width="1.25" fill="none">
+    <ellipse cx="1140" cy="250" rx="120" ry="96"/>
+    <ellipse cx="1140" cy="250" rx="188" ry="150"/>
+    <ellipse cx="1140" cy="250" rx="264" ry="210"/>
+    <ellipse cx="1140" cy="250" rx="348" ry="278"/>
+  </g>
+
+  <!-- Alignment / survey lines -->
+  <g stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="1">
+    <path d="M0 496 H1440"/>
+    <path d="M336 0 V640"/>
+    <path d="M0 200 L520 200 L640 320"/>
+  </g>
+
+  <!-- Crosshair station markers -->
+  <g stroke="#B06A2C" stroke-opacity="0.55" stroke-width="1.4">
+    <path d="M336 496 m-9 0 h18 M336 496 m0 -9 v18"/>
+    <path d="M640 320 m-9 0 h18 M640 320 m0 -9 v18"/>
+  </g>
+  <g fill="#B06A2C" fill-opacity="0.5">
+    <circle cx="336" cy="200" r="3"/>
+    <circle cx="1140" cy="250" r="3"/>
+  </g>
+</svg>

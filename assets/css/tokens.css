@@ -1,0 +1,104 @@
+/* ============================================================================
+   APEX GAMA SOLUTIONS — Design Tokens
+   Single source of truth for color, type, space, and structure.
+   Implements docs/03-design-system.md. Portable to any static host; no build.
+   ========================================================================== */
+
+:root {
+  /* ---- Color: institutional neutrals -------------------------------------- */
+  --ink:        #141B24;   /* primary text / dark sections (deep blue-slate)   */
+  --slate-900:  #182029;
+  --slate-800:  #1F2A36;   /* dark panels / footer                             */
+  --slate-700:  #2B3A47;
+  --slate-600:  #3C4C5A;   /* secondary text on paper                          */
+  --slate-500:  #556676;
+  --slate-400:  #6E7F8D;   /* muted text / captions                           */
+  --slate-300:  #9AA7B1;
+  --slate-200:  #C7D0D6;   /* hairlines / borders                              */
+  --slate-100:  #DFE4E8;
+
+  --paper:        #F7F5F0; /* primary background — warm stone                  */
+  --paper-raised: #FFFFFF; /* cards / raised surfaces                          */
+  --stone-100:    #ECE8E0; /* alternating section background                   */
+  --stone-200:    #E1DBD0;
+
+  /* ---- Color: accents (restrained) ---------------------------------------- */
+  --ochre:      #B06A2C;   /* primary accent — rules, active, small marks      */
+  --ochre-deep: #8A5220;   /* accent hover / emphasis                          */
+  --ochre-soft: #D9B892;   /* accent tint for dark backgrounds                 */
+  --steel:      #3E6E8E;   /* secondary/data accent — diagrams & charts only   */
+  --steel-soft: #7FA6BE;
+
+  /* ---- Semantic assignments ---------------------------------------------- */
+  --bg:            var(--paper);
+  --bg-alt:        var(--stone-100);
+  --surface:       var(--paper-raised);
+  --text:          var(--ink);
+  --text-muted:    var(--slate-600);
+  --text-subtle:   var(--slate-400);
+  --border:        var(--slate-200);
+  --border-strong: var(--slate-400);
+  --accent:        var(--ochre);
+  --accent-hover:  var(--ochre-deep);
+
+  --focus-ring: var(--ochre);
+
+  /* ---- Typography --------------------------------------------------------- */
+  --font-display: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+               Helvetica, Arial, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", "Menlo",
+               "Consolas", monospace;
+
+  /* Fluid type scale — major third (~1.25) */
+  --step--1: clamp(0.80rem, 0.77rem + 0.14vw, 0.875rem);
+  --step-0:  clamp(1.00rem, 0.96rem + 0.18vw, 1.0625rem);
+  --step-1:  clamp(1.20rem, 1.13rem + 0.34vw, 1.375rem);
+  --step-2:  clamp(1.44rem, 1.33rem + 0.55vw, 1.75rem);
+  --step-3:  clamp(1.73rem, 1.55rem + 0.86vw, 2.25rem);
+  --step-4:  clamp(2.07rem, 1.79rem + 1.36vw, 2.9375rem);
+  --step-5:  clamp(2.49rem, 2.05rem + 2.10vw, 3.75rem);
+  --step-6:  clamp(2.85rem, 2.16rem + 3.35vw, 4.75rem);
+
+  --leading-tight: 1.1;
+  --leading-snug: 1.28;
+  --leading-body: 1.62;
+  --tracking-mono: 0.14em;
+  --tracking-wide: 0.02em;
+
+  /* ---- Spacing scale ------------------------------------------------------ */
+  --space-3xs: 0.25rem;
+  --space-2xs: 0.5rem;
+  --space-xs:  0.75rem;
+  --space-sm:  1rem;
+  --space-md:  1.5rem;
+  --space-lg:  2rem;
+  --space-xl:  3rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --space-4xl: 8rem;
+
+  /* ---- Layout ------------------------------------------------------------- */
+  --container: 1200px;
+  --container-narrow: 920px;
+  --measure: 68ch;
+  --gutter: clamp(1.25rem, 0.6rem + 3vw, 3rem);
+  --section-y: clamp(3.5rem, 2rem + 6vw, 7rem);
+
+  /* ---- Lines, radius, shadow (restrained) --------------------------------- */
+  --hair: 1px;
+  --rule: 2px;
+  --radius: 2px;         /* near-square; no rounded-card aesthetic             */
+  --radius-none: 0;
+  --shadow-sm: 0 1px 2px rgba(20, 27, 36, 0.06),
+               0 1px 1px rgba(20, 27, 36, 0.04);
+  --shadow-md: 0 6px 24px -12px rgba(20, 27, 36, 0.28);
+
+  /* ---- Motion ------------------------------------------------------------- */
+  --ease: cubic-bezier(0.2, 0.6, 0.2, 1);
+  --dur: 220ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root { --dur: 0ms; }
+}
