@@ -46,10 +46,13 @@ Company            Capabilities        Contracting          Resources (future)
 | Contracting | `contracting.html` | **Built** | Procurement facts (all placeholders), how to buy, small-business, capability statement request. |
 | Contact | `contact.html` | **Built** | Points of contact (placeholder), inquiry form, media/recruiting routes. |
 | Not Found | `404.html` | **Built** | Graceful recovery, routes back into the site. |
-| Newsroom | `newsroom.html` | *Reserved* | Press releases, awards, events. |
-| Careers | `careers.html` | *Reserved* | Recruiting, culture, openings. |
-| Case Studies / Past Performance | `past-performance.html` | *Reserved* | Populated only with real, cleared past performance. |
-| Insights / White Papers | `insights.html` | *Reserved* | Thought leadership. |
+| Newsroom | `newsroom.html` | **Built** | Press releases, awards, events. Live, reserved index. |
+| Careers | `careers.html` | **Built** | Recruiting, culture, hiring process, openings, EEO. |
+| Case Studies / Past Performance | `past-performance.html` | **Built** | Reserved records; populated only with real, cleared past performance. |
+| Insights / White Papers | `insights.html` | **Built** | Thought leadership. Live, reserved index. |
+
+The four sections above are reached via a **Resources** dropdown in the primary
+navigation (Newsroom · Insights · Past Performance · Careers) and via the footer.
 
 ## 4. Per-page content hierarchy (applied to every built page)
 

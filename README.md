@@ -32,11 +32,18 @@ Delivered in this pass (a strategic foundation plus a complete, navigable core s
 - `approach.html` — operating model
 - `contracting.html` — procurement information
 - `contact.html` — points of contact + inquiry form
+- `newsroom.html` — announcements, awards, events (live, reserved index)
+- `insights.html` — white papers / perspective (live, reserved index)
+- `past-performance.html` — delivered engagements (reserved records, honesty-first)
+- `careers.html` — culture, hiring process, openings, EEO
 - `404.html` — recovery page
 - `robots.txt`, `sitemap.xml`
 
-Reserved for future phases (no redesign required): Newsroom, Careers,
-Past Performance / Case Studies, Insights / White Papers, Certifications.
+Newsroom, Insights, Past Performance, and Careers are reachable from a
+**Resources** dropdown in the primary navigation and from the footer. They ship
+as live, empty-but-ready sections: real content drops into the existing index /
+record layouts with no redesign. Certifications remain reserved and slot into
+the Contracting page when awarded.
 
 ---
 
