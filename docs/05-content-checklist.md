@@ -11,6 +11,25 @@ gets replaced with your verified content.
 
 ---
 
+### Status (updated as content arrives)
+
+**Received & live on the site:**
+- ✅ Mission & vision statements
+- ✅ All six business unit descriptions + representative services (Engineering Support
+  replaced with **Advisory & Risk Services** per your call)
+- ✅ Small-business status: self-certified small business; no socioeconomic certs
+- ✅ Contract vehicles: none at this time (honest reserved statement live)
+- ✅ Primary contact email: contact@apexgamasolutions.com (all desks + inquiry form)
+- ✅ Tagline kept: "Operational discipline for government missions."
+
+**Still pending (21 placeholders remain):**
+- ⏳ Federal registration & identifiers — §1 (you said next week)
+- ⏳ Leadership — your name, title, bio, headshot — §6
+- ⏳ Office address / mailing / hours — §7 (or tell me to remove the Offices section)
+- ⏳ Capability statement PDF — §9 (you're sending shortly)
+
+---
+
 ## 1 ★ Federal registration & identifiers
 *(Appears on the Home procurement snapshot and the Contracting page. Provide once.)*
 

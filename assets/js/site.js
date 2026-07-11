@@ -53,6 +53,36 @@
     });
   }
 
+  // Contact form — compose an email to contact@apexgamasolutions.com.
+  // No backend: submitting opens the visitor's mail client, pre-filled.
+  var form = document.querySelector("form.form");
+  if (form && (form.getAttribute("action") || "").indexOf("mailto:") === 0) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var val = function (id) {
+        var el = document.getElementById(id);
+        return el ? String(el.value).trim() : "";
+      };
+      var topic = val("topic") || "Website inquiry";
+      var subject = "Website inquiry — " + topic;
+      var lines = [
+        "Name: " + val("name"),
+        "Organization: " + val("org"),
+        "Email: " + val("email"),
+        "Phone: " + val("phone"),
+        "Reason: " + topic,
+        "",
+        "Message:",
+        val("message")
+      ];
+      window.location.href =
+        "mailto:contact@apexgamasolutions.com?subject=" +
+        encodeURIComponent(subject) +
+        "&body=" +
+        encodeURIComponent(lines.join("\n"));
+    });
+  }
+
   // Current year in footer
   var y = document.querySelectorAll("[data-year]");
   var year = new Date().getFullYear();
