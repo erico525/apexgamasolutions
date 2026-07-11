@@ -24,14 +24,22 @@ gets replaced with your verified content.
 - ✅ Contract vehicles: none at this time (honest reserved statement live)
 - ✅ Primary contact email: contact@apexgamasolutions.com (all desks + inquiry form)
 
+- ✅ Leadership: Eric M. Marks, CEO & Founder — bio live (drawn from résumé; other
+  companies deliberately not named); title/name set
+- ✅ Location: "Greater Los Angeles, California" (home street address deliberately
+  NOT published; full address on request / via SAM.gov)
+- ✅ Domain confirmed: apexgamasolutions.com (site already built for it)
+
 **Still pending:**
 - ⏳ UEI + CAGE actual numbers — once SAM.gov registration activates
-- ⏳ Leadership — your name, title, bio, headshot — §6
-- ⏳ Office address / mailing / hours — §7 (or tell me to remove the Offices section)
-- ⏳ **Domain to resolve** — capability statement says `apexgama.com`; site currently
-  built for `apexgamasolutions.com` (see open question)
+- ⏳ **Headshot photo file** — received inline but I need it as an attached image
+  file to place it; an "EM" monogram stands in until then
 - ⏳ **Final capability statement PDF** — the draft still has `[FULL NAME]`, `[BIO]`,
   `[ADDRESS]`, `[EMAIL]`, `[PHONE]` placeholders, so it is not yet publishable
+- ⏳ Update the capability statement's website from `apexgama.com` to
+  `apexgamasolutions.com` (your document, not a site change)
+
+Every `« COMPANY TO PROVIDE »` placeholder has now been removed from the site.
 
 ---
 
