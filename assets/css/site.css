@@ -126,8 +126,18 @@ a:hover { color: var(--ochre); }
 .btn--primary { background: var(--ink); color: #fff; border-color: var(--ink); }
 .btn--primary:hover { background: var(--slate-700); color: #fff; }
 
-.btn--accent { background: var(--ochre-deep); color: #fff; border-color: var(--ochre-deep); }
-.btn--accent:hover { background: var(--ochre-deeper); color: #fff; border-color: var(--ochre-deeper); }
+/* Primary action: crisp ink on light surfaces … */
+.btn--accent { background: var(--ink); color: #fff; border-color: var(--ink); }
+.btn--accent:hover { background: var(--slate-700); color: #fff; border-color: var(--slate-700); }
+/* … and inverts to a clean light button on dark surfaces */
+.hero .btn--accent, .page-header .btn--accent, .cta-band .btn--accent,
+.bg-ink .btn--accent, .bg-slate .btn--accent {
+  background: var(--paper); color: var(--ink); border-color: var(--paper);
+}
+.hero .btn--accent:hover, .page-header .btn--accent:hover, .cta-band .btn--accent:hover,
+.bg-ink .btn--accent:hover, .bg-slate .btn--accent:hover {
+  background: #fff; color: var(--ink); border-color: #fff;
+}
 
 .btn--ghost { background: transparent; color: var(--ink); border-color: var(--slate-300); }
 .btn--ghost:hover { border-color: var(--ink); background: var(--ink); color: #fff; }
