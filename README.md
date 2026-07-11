@@ -27,24 +27,23 @@ Delivered in this pass (a strategic foundation plus a complete, navigable core s
 - Original graphics: plan-view contour pattern, operating-model schematic
 
 **Website** — root
-- `index.html` — home
-- `about.html` — company
+A focused five-page site — the professional essentials, nothing padded:
+
+- `index.html` — home (positioning, capabilities, who we support, how we work, procurement snapshot)
+- `about.html` — company (overview, mission/vision, operating principles, leadership)
 - `capabilities.html` — six business units
-- `approach.html` — operating model
-- `contracting.html` — procurement information
+- `contracting.html` — procurement information (identifiers, codes, vehicles, small business, engagement)
 - `contact.html` — points of contact + inquiry form
-- `newsroom.html` — announcements, awards, events (live, reserved index)
-- `insights.html` — white papers / perspective (live, reserved index)
-- `past-performance.html` — delivered engagements (reserved records, honesty-first)
-- `careers.html` — culture, hiring process, openings, EEO
 - `404.html` — recovery page
 - `robots.txt`, `sitemap.xml`
 
-Newsroom, Insights, Past Performance, and Careers are reachable from a
-**Resources** dropdown in the primary navigation and from the footer. They ship
-as live, empty-but-ready sections: real content drops into the existing index /
-record layouts with no redesign. Certifications remain reserved and slot into
-the Contracting page when awarded.
+The design system and information architecture are built to absorb further
+sections later without a redesign — Newsroom, Insights, Past Performance,
+Careers, and Certifications each have a documented home in
+`docs/02-information-architecture.md`. They are intentionally **not** built yet;
+the site stays lean until there is real content to fill them. The reusable
+components for those sections (index list, record card, notice/empty state)
+remain in `assets/css/site.css`.
 
 ---
 

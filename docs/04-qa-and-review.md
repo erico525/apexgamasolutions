@@ -12,7 +12,9 @@ and re-audited until clean. Results below reflect the final state.
 
 ## 2. Accessibility (WCAG 2.1 AA target)
 
-**Structure — all 11 pages pass:**
+*(Audit re-run after the site was trimmed to its five-page core plus 404.)*
+
+**Structure — all 6 pages pass:**
 - One `<h1>` per page; heading order is now gap-free (a visually-hidden
   `<h2>` labels the footer and the Capabilities overview / 404 helper sections
   so no level is skipped).
@@ -21,12 +23,10 @@ and re-audited until clean. Results below reflect the final state.
 - Every `<img>` has an `alt` (empty + `aria-hidden` for decorative linework);
   every form control has an associated `<label>`; no duplicate `id`s.
 
-**Navigation dropdown:** rebuilt as a proper disclosure pattern — the toggle
-carries `aria-expanded` / `aria-controls`; the `role="menu"` / `role="menuitem"`
-attributes were removed (they are an anti-pattern for link menus and impose
-keyboard semantics the widget does not implement). Escape closes the menu and
-returns focus to the toggle; outside-click closes it; it collapses inline on
-mobile.
+**Navigation:** shallow and flat — Company · Capabilities · Contracting, plus
+Contact as the emphasized action. No dropdown (the site is small enough not to
+need one); the disclosure component remains in the codebase for when reserved
+sections are added.
 
 **Color contrast — every text pair now meets AA (≥ 4.5:1):**
 
@@ -68,11 +68,10 @@ honored.
 
 ## 5. Content integrity
 
-91 visible `« COMPANY TO PROVIDE »` placeholders remain across the site,
+54 visible `« COMPANY TO PROVIDE »` placeholders remain across the site,
 covering every fact the company has not yet supplied (registrations, codes,
-leadership, contacts, service descriptions, past performance, news, openings).
-**Nothing is fabricated.** Run `grep -rn "COMPANY TO PROVIDE" .` for the full
-punch-list before launch.
+leadership, contacts, service descriptions). **Nothing is fabricated.** Run
+`grep -rn "COMPANY TO PROVIDE" .` for the full punch-list before launch.
 
 ## 6. Executive review — against the brief's own tests
 

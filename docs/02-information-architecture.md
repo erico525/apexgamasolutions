@@ -18,41 +18,35 @@
 Apex Gama Solutions
 ├── Company            (about.html)
 ├── Capabilities       (capabilities.html)
-├── Approach           (approach.html)
 ├── Contracting        (contracting.html)   ← procurement info (NAICS/PSC/UEI/CAGE/SAM)
 └── Contact            (contact.html)        ← primary CTA, styled as button
 ```
 
-Utility / footer navigation (reserved, expands over time):
-
-```
-Company            Capabilities        Contracting          Resources (future)
-- Overview         - Operations Sup.   - How to work w/ us  - Newsroom
-- Leadership       - Facilities & Inf. - Registrations      - Insights / White Papers
-- Approach         - Logistics         - Contract Vehicles  - Case Studies
-- Careers (future) - Program Mgmt      - Small Business      - Past Performance
-                   - Training & Read.  - Capability Stmt     - Certifications
-                   - Engineering Sup.
-```
+The navigation is deliberately shallow — four destinations plus the Contact
+action. "How we work" lives as a section on the Home and Company pages rather
+than as its own page. Footer navigation mirrors the three content areas
+(Company · Capabilities · Contracting).
 
 ## 3. Sitemap (built now vs. reserved)
 
 | Page | File | Status | Purpose |
 |---|---|---|---|
-| Home | `index.html` | **Built** | Positioning, capability overview, who we support, approach, procurement snapshot, contact. |
+| Home | `index.html` | **Built** | Positioning, capability overview, who we support, how we work, procurement snapshot, contact. |
 | Company | `about.html` | **Built** | Who we are, mission/vision (placeholders), operating principles, leadership (placeholder), CTA. |
 | Capabilities | `capabilities.html` | **Built** | Six business units as a scaffold; each with placeholder descriptions/examples. |
-| Approach | `approach.html` | **Built** | The operating model as a numbered, repeatable process. |
 | Contracting | `contracting.html` | **Built** | Procurement facts (all placeholders), how to buy, small-business, capability statement request. |
 | Contact | `contact.html` | **Built** | Points of contact (placeholder), inquiry form, media/recruiting routes. |
 | Not Found | `404.html` | **Built** | Graceful recovery, routes back into the site. |
-| Newsroom | `newsroom.html` | **Built** | Press releases, awards, events. Live, reserved index. |
-| Careers | `careers.html` | **Built** | Recruiting, culture, hiring process, openings, EEO. |
-| Case Studies / Past Performance | `past-performance.html` | **Built** | Reserved records; populated only with real, cleared past performance. |
-| Insights / White Papers | `insights.html` | **Built** | Thought leadership. Live, reserved index. |
+| Approach | `approach.html` | *Reserved* | Operating model as a numbered process (folded into Home/Company for now). |
+| Newsroom | `newsroom.html` | *Reserved* | Press releases, awards, events. |
+| Careers | `careers.html` | *Reserved* | Recruiting, culture, openings. |
+| Past Performance | `past-performance.html` | *Reserved* | Populated only with real, cleared past performance. |
+| Insights / White Papers | `insights.html` | *Reserved* | Thought leadership. |
 
-The four sections above are reached via a **Resources** dropdown in the primary
-navigation (Newsroom · Insights · Past Performance · Careers) and via the footer.
+The site ships lean: the reserved rows are **not** built until there is real
+content to fill them. The reusable components they need (index list, record
+card, notice/empty state) already exist in the design system, so each can be
+added later — behind a "Resources" menu — without a redesign.
 
 ## 4. Per-page content hierarchy (applied to every built page)
 
