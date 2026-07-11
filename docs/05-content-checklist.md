@@ -34,10 +34,11 @@ gets replaced with your verified content.
   (`capability-statement.html`, noindex) fully populated; linked from Contracting.
   Includes personal phone from résumé — swap for a business line anytime.
 
-**Still pending:**
+- ✅ Founder headshot — live on the Company page
+  (`assets/img/leadership/eric-marks.jpg`); monogram remains an automatic fallback
+
+**Still pending (does not block launch):**
 - ⏳ UEI + CAGE actual numbers — once SAM.gov registration activates
-- ⏳ **Headshot photo file** — must be sent as a file attachment (paperclip), not
-  pasted inline, or the system doesn't save it to disk; "EM" monogram stands in
 
 Every `« COMPANY TO PROVIDE »` placeholder has now been removed from the site.
 
