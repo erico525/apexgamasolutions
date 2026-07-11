@@ -142,8 +142,8 @@ a:hover { color: var(--ochre); }
 .btn--ghost { background: transparent; color: var(--ink); border-color: var(--slate-300); }
 .btn--ghost:hover { border-color: var(--ink); background: var(--ink); color: #fff; }
 
-.bg-ink .btn--ghost, .bg-slate .btn--ghost, .hero .btn--ghost, .page-header .btn--ghost { color: #fff; border-color: rgba(255,255,255,0.35); }
-.bg-ink .btn--ghost:hover, .bg-slate .btn--ghost:hover, .hero .btn--ghost:hover, .page-header .btn--ghost:hover { background: #fff; color: var(--ink); border-color: #fff; }
+.bg-ink .btn--ghost, .bg-slate .btn--ghost, .hero .btn--ghost, .page-header .btn--ghost, .cta-band .btn--ghost { color: #fff; border-color: rgba(255,255,255,0.35); }
+.bg-ink .btn--ghost:hover, .bg-slate .btn--ghost:hover, .hero .btn--ghost:hover, .page-header .btn--ghost:hover, .cta-band .btn--ghost:hover { background: #fff; color: var(--ink); border-color: #fff; }
 
 .link-arrow {
   font-family: var(--font-sans); font-weight: 500; text-decoration: none;
@@ -172,19 +172,19 @@ a:hover { color: var(--ochre); }
 
 .primary-nav { display: flex; align-items: center; gap: clamp(1rem, 0.4rem + 1.6vw, 2rem); }
 .primary-nav ul { display: flex; align-items: center; gap: clamp(1rem, 0.4rem + 1.6vw, 2rem); list-style: none; padding: 0; }
-.primary-nav a {
+.primary-nav ul a {
   font-size: var(--step-0); font-weight: 500; color: var(--slate-700);
   text-decoration: none; padding: 0.4rem 0; position: relative;
 }
-.primary-nav a::after {
+.primary-nav ul a::after {
   content: ""; position: absolute; left: 0; right: 0; bottom: -2px; height: var(--rule);
   background: var(--ochre); transform: scaleX(0); transform-origin: left;
   transition: transform var(--dur) var(--ease);
 }
-.primary-nav a:hover { color: var(--ink); }
-.primary-nav a:hover::after,
-.primary-nav a[aria-current="page"]::after { transform: scaleX(1); }
-.primary-nav a[aria-current="page"] { color: var(--ink); }
+.primary-nav ul a:hover { color: var(--ink); }
+.primary-nav ul a:hover::after,
+.primary-nav ul a[aria-current="page"]::after { transform: scaleX(1); }
+.primary-nav ul a[aria-current="page"] { color: var(--ink); }
 
 .nav-cta { display: inline-flex; }
 
