@@ -18,15 +18,20 @@ gets replaced with your verified content.
 - ✅ All six business unit descriptions + representative services (Engineering Support
   replaced with **Advisory & Risk Services** per your call)
 - ✅ Small-business status: self-certified small business; no socioeconomic certs
+- ✅ NAICS (541690 primary; 611699/541990/561210/561612), PSC codes (U003/U008/U013/
+  U099/R408/R499/R699/M1-Series), and California LLC — from the capability statement
+- ✅ Registration status honestly shown as "in process" (UEI/CAGE pending activation)
 - ✅ Contract vehicles: none at this time (honest reserved statement live)
 - ✅ Primary contact email: contact@apexgamasolutions.com (all desks + inquiry form)
-- ✅ Tagline kept: "Operational discipline for government missions."
 
-**Still pending (21 placeholders remain):**
-- ⏳ Federal registration & identifiers — §1 (you said next week)
+**Still pending:**
+- ⏳ UEI + CAGE actual numbers — once SAM.gov registration activates
 - ⏳ Leadership — your name, title, bio, headshot — §6
 - ⏳ Office address / mailing / hours — §7 (or tell me to remove the Offices section)
-- ⏳ Capability statement PDF — §9 (you're sending shortly)
+- ⏳ **Domain to resolve** — capability statement says `apexgama.com`; site currently
+  built for `apexgamasolutions.com` (see open question)
+- ⏳ **Final capability statement PDF** — the draft still has `[FULL NAME]`, `[BIO]`,
+  `[ADDRESS]`, `[EMAIL]`, `[PHONE]` placeholders, so it is not yet publishable
 
 ---
 
