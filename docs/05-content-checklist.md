@@ -30,14 +30,14 @@ gets replaced with your verified content.
   NOT published; full address on request / via SAM.gov)
 - ✅ Domain confirmed: apexgamasolutions.com (site already built for it)
 
+- ✅ Capability statement: rebuilt as a brand-matched, print-ready one-pager
+  (`capability-statement.html`, noindex) fully populated; linked from Contracting.
+  Includes personal phone from résumé — swap for a business line anytime.
+
 **Still pending:**
 - ⏳ UEI + CAGE actual numbers — once SAM.gov registration activates
-- ⏳ **Headshot photo file** — received inline but I need it as an attached image
-  file to place it; an "EM" monogram stands in until then
-- ⏳ **Final capability statement PDF** — the draft still has `[FULL NAME]`, `[BIO]`,
-  `[ADDRESS]`, `[EMAIL]`, `[PHONE]` placeholders, so it is not yet publishable
-- ⏳ Update the capability statement's website from `apexgama.com` to
-  `apexgamasolutions.com` (your document, not a site change)
+- ⏳ **Headshot photo file** — must be sent as a file attachment (paperclip), not
+  pasted inline, or the system doesn't save it to disk; "EM" monogram stands in
 
 Every `« COMPANY TO PROVIDE »` placeholder has now been removed from the site.
 
