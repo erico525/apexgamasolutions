@@ -163,10 +163,10 @@ a:hover { color: var(--ochre); }
 }
 .site-header__inner {
   display: flex; align-items: center; justify-content: space-between;
-  gap: var(--space-lg); min-height: 5.5rem;
+  gap: var(--space-lg); padding-block: 1rem;
 }
 .brand { display: inline-flex; align-items: center; text-decoration: none; }
-.brand img { height: 3.4rem; width: auto; max-width: 100%; }
+.brand img { height: 3.25rem; width: auto; max-width: 100%; display: block; }
 .brand:focus-visible { outline-offset: 4px; }
 
 .primary-nav { display: flex; align-items: center; gap: clamp(1rem, 0.4rem + 1.6vw, 2rem); }
