@@ -85,7 +85,10 @@
           </div>
 
           <div class="feature__media" style="background:var(--surface);padding:var(--space-lg);">
-            <form class="form" action="mailto:contact@apexgamasolutions.com" method="post" enctype="text/plain" aria-describedby="form-endpoint-note">
+            <form class="form" id="contact-form" novalidate>
+              <div class="hp" aria-hidden="true">
+                <label>Company website<input type="text" name="company_website" tabindex="-1" autocomplete="off"></label>
+              </div>
               <div class="form-row">
                 <div class="field">
                   <label for="name">Name <span class="req" aria-hidden="true">*</span></label>
@@ -123,9 +126,10 @@
                 <span class="help" id="message-help">Include agency, requirement, and NAICS where relevant.</span>
               </div>
               <div>
-                <button type="submit" class="btn btn--accent">Send inquiry <span class="arrow" aria-hidden="true">&rarr;</span></button>
+                <button type="submit" class="btn btn--accent" data-default-label="Send inquiry">Send inquiry <span class="arrow" aria-hidden="true">&rarr;</span></button>
               </div>
-              <p class="form-note" id="form-endpoint-note">Submitting opens your email client to send to <a href="mailto:contact@apexgamasolutions.com">contact@apexgamasolutions.com</a>. You can also email us directly at that address.</p>
+              <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+              <p class="form-note">Prefer email? Reach us directly at <a href="mailto:contact@apexgamasolutions.com">contact@apexgamasolutions.com</a>.</p>
             </form>
           </div>
         </div>
@@ -172,5 +176,6 @@
   </footer>
 
   <script src="assets/js/site.js" defer></script>
+  <script src="assets/js/contact.js" defer></script>
 </body>
 </html>
