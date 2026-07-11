@@ -1,0 +1,23 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "apexgamasolutions.com" }],
+      "destination": "https://www.apexgamadefensesolutions.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.apexgamasolutions.com" }],
+      "destination": "https://www.apexgamadefensesolutions.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "apexgamadefensesolutions.com" }],
+      "destination": "https://www.apexgamadefensesolutions.com/:path*",
+      "permanent": true
+    }
+  ]
+}

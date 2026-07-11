@@ -22,7 +22,7 @@ gets replaced with your verified content.
   U099/R408/R499/R699/M1-Series), and California LLC — from the capability statement
 - ✅ Registration status honestly shown as "in process" (UEI/CAGE pending activation)
 - ✅ Contract vehicles: none at this time (honest reserved statement live)
-- ✅ Primary contact email: contact@apexgamasolutions.com (all desks + inquiry form)
+- ✅ Primary contact email: contact@apexgamadefensesolutions.com (all desks + inquiry form)
 
 - ✅ Leadership: Eric M. Marks, CEO & Founder — bio live (drawn from résumé; other
   companies deliberately not named); title/name set
