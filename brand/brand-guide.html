@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Apex Gama Solutions — Brand Guide</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="logo-svg/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+  <style>
+    :root{
+      --ink:#141B24;--slate-800:#1F2A36;--slate-600:#3C4C5A;--slate-400:#6E7F8D;
+      --slate-200:#C7D0D6;--paper:#F7F5F0;--stone:#ECE8E0;--ochre:#B06A2C;
+      --ochre-deep:#8A5220;--ochre-soft:#D9B892;--steel:#3E6E8E;--border:#C7D0D6;
+      --sans:"IBM Plex Sans",system-ui,Arial,sans-serif;--serif:"Source Serif 4",Georgia,serif;
+      --mono:"IBM Plex Mono",ui-monospace,monospace;
+    }
+    *{box-sizing:border-box;margin:0}
+    body{font-family:var(--sans);color:var(--ink);background:var(--paper);line-height:1.6;font-size:16px}
+    .wrap{max-width:1100px;margin:0 auto;padding:clamp(1.5rem,1rem+3vw,4rem)}
+    header.hd{background:var(--ink);color:#fff;padding:2.5rem;border-radius:2px;display:flex;justify-content:space-between;align-items:flex-end;gap:2rem;flex-wrap:wrap}
+    header.hd img{height:52px}
+    header.hd .r{text-align:right;font-family:var(--mono);font-size:.8rem;letter-spacing:.24em;text-transform:uppercase;color:var(--ochre-soft)}
+    .eyebrow{font-family:var(--mono);font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ochre-deep);display:flex;align-items:center;gap:.6rem;margin:3.5rem 0 1.2rem}
+    .eyebrow::before{content:"";width:1.6rem;height:2px;background:var(--ochre)}
+    h1{font-family:var(--serif);font-size:2rem;font-weight:600}
+    h2{font-family:var(--serif);font-size:1.6rem;font-weight:600;margin-bottom:.4rem}
+    h3{font-family:var(--serif);font-size:1.15rem;font-weight:600}
+    p{max-width:66ch;color:var(--slate-600)}
+    .lede{font-size:1.15rem;color:var(--slate-600);max-width:70ch}
+    .grid{display:grid;gap:1px;background:var(--border);border:1px solid var(--border);border-radius:2px;overflow:hidden}
+    .logos{grid-template-columns:repeat(2,1fr)}
+    .logocell{background:#fff;padding:2.5rem;display:flex;align-items:center;justify-content:center;min-height:150px}
+    .logocell.dark{background:var(--ink)}
+    .logocell.stone{background:var(--stone)}
+    .logocell img{max-width:78%;max-height:120px}
+    .logocell.icon img{max-width:110px}
+    .cap{font-family:var(--mono);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--slate-400);background:#fff;padding:.6rem 1rem;border-top:1px solid var(--border)}
+    .swatches{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:1rem}
+    .sw{border:1px solid var(--border);border-radius:2px;overflow:hidden;background:#fff}
+    .sw .chip{height:84px}
+    .sw .meta{padding:.6rem .8rem;font-family:var(--mono);font-size:.72rem;letter-spacing:.02em}
+    .sw .meta b{display:block;font-size:.8rem;color:var(--ink);text-transform:none;font-family:var(--sans);font-weight:600;margin-bottom:.15rem}
+    .sw .meta span{color:var(--slate-400)}
+    .type{display:grid;gap:1.5rem}
+    .type .row{border-top:1px solid var(--border);padding-top:1.2rem}
+    .type .tag{font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ochre-deep);margin-bottom:.5rem}
+    .specimen-serif{font-family:var(--serif);font-size:2.4rem;font-weight:600;line-height:1.1;letter-spacing:-.01em}
+    .specimen-sans{font-family:var(--sans);font-size:1.5rem}
+    .specimen-mono{font-family:var(--mono);font-size:1.1rem;letter-spacing:.05em}
+    .two{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+    .card{border:1px solid var(--border);border-radius:2px;padding:1.4rem 1.6rem;background:#fff}
+    .card.do{border-top:3px solid var(--steel)}
+    .card.dont{border-top:3px solid var(--ochre-deep)}
+    ul{padding-left:1.1rem;color:var(--slate-600)}
+    li{margin:.35rem 0}
+    .files{font-family:var(--mono);font-size:.85rem;color:var(--slate-600);background:#fff;border:1px solid var(--border);border-radius:2px;padding:1.2rem 1.4rem;line-height:1.9}
+    .files b{color:var(--ink)}
+    footer{margin-top:4rem;border-top:1px solid var(--border);padding-top:1.5rem;font-size:.85rem;color:var(--slate-400)}
+    @media(max-width:640px){.logos,.two{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hd">
+      <img src="logo-svg/logo-white.svg" alt="Apex Gama Solutions">
+      <div class="r">Brand Guide<br>v1.0</div>
+    </header>
+
+    <p class="lede" style="margin-top:2rem">The visual identity of <strong>Apex Gama Solutions</strong> — a disciplined,
+    institutional system built for longevity and for reuse across the website, capability statements, proposals,
+    presentations, letterhead, business cards, and social media.</p>
+
+    <!-- MARK -->
+    <p class="eyebrow">The mark</p>
+    <div class="two">
+      <div>
+        <h2>The Apex Datum</h2>
+        <p>An ascending peak — the <em>apex</em>: summit, precision, forward progress — with an ochre inner peak,
+        resting on a horizontal <em>datum line</em>: the surveyor's and engineer's reference, signaling structure and
+        foundation. It reads as reliability and disciplined forward motion, with none of the eagle/shield/star/flag
+        clichés of defense branding.</p>
+        <p style="margin-top:1rem">Minimum size: mark no smaller than 24&nbsp;px on screen / 0.3&nbsp;in in print.
+        Clear space: at least the width of the datum line on all sides.</p>
+      </div>
+      <div class="grid"><div class="logocell icon"><img src="logo-svg/icon-mark.svg" alt="Apex Gama icon mark"></div></div>
+    </div>
+
+    <!-- LOGO SYSTEM -->
+    <p class="eyebrow">Logo system</p>
+    <div class="grid logos">
+      <div><div class="logocell"><img src="logo-svg/logo-horizontal.svg" alt="Horizontal logo"></div><div class="cap">Horizontal — default for headers &amp; letterhead</div></div>
+      <div><div class="logocell stone"><img src="logo-svg/logo-primary.svg" alt="Primary stacked logo"></div><div class="cap">Primary (stacked)</div></div>
+      <div><div class="logocell dark"><img src="logo-svg/logo-white.svg" alt="Reversed logo"></div><div class="cap" style="background:var(--ink);color:var(--slate-200);border-color:#2b3a47">Reversed — for dark backgrounds</div></div>
+      <div><div class="logocell"><img src="logo-svg/logo-mono.svg" alt="Monochrome logo"></div><div class="cap">Monochrome — one-color print &amp; engraving</div></div>
+    </div>
+
+    <!-- COLOR -->
+    <p class="eyebrow">Color palette</p>
+    <p style="margin-bottom:1.4rem">A deep institutional neutral does the work; a single restrained <strong>ochre</strong>
+    accent — the surveyor's mark — is used sparingly for rules, highlights, and small marks. No patriotic
+    red-white-blue; no tactical black-and-olive.</p>
+    <div class="swatches">
+      <div class="sw"><div class="chip" style="background:#141B24"></div><div class="meta"><b>Ink</b><span>#141B24</span></div></div>
+      <div class="sw"><div class="chip" style="background:#1F2A36"></div><div class="meta"><b>Slate 800</b><span>#1F2A36</span></div></div>
+      <div class="sw"><div class="chip" style="background:#3C4C5A"></div><div class="meta"><b>Slate 600</b><span>#3C4C5A</span></div></div>
+      <div class="sw"><div class="chip" style="background:#6E7F8D"></div><div class="meta"><b>Slate 400</b><span>#6E7F8D</span></div></div>
+      <div class="sw"><div class="chip" style="background:#C7D0D6"></div><div class="meta"><b>Slate 200</b><span>#C7D0D6</span></div></div>
+      <div class="sw"><div class="chip" style="background:#F7F5F0;box-shadow:inset 0 0 0 1px #e1dbd0"></div><div class="meta"><b>Paper</b><span>#F7F5F0</span></div></div>
+      <div class="sw"><div class="chip" style="background:#ECE8E0"></div><div class="meta"><b>Stone</b><span>#ECE8E0</span></div></div>
+      <div class="sw"><div class="chip" style="background:#B06A2C"></div><div class="meta"><b>Ochre</b><span>#B06A2C</span></div></div>
+      <div class="sw"><div class="chip" style="background:#8A5220"></div><div class="meta"><b>Ochre Deep</b><span>#8A5220</span></div></div>
+      <div class="sw"><div class="chip" style="background:#D9B892"></div><div class="meta"><b>Ochre Soft</b><span>#D9B892</span></div></div>
+      <div class="sw"><div class="chip" style="background:#3E6E8E"></div><div class="meta"><b>Steel</b><span>#3E6E8E</span></div></div>
+    </div>
+
+    <!-- TYPE -->
+    <p class="eyebrow">Typography</p>
+    <div class="type">
+      <div class="row"><div class="tag">Display &amp; headings — Source Serif 4</div><div class="specimen-serif">Operational discipline for government missions.</div></div>
+      <div class="row"><div class="tag">Body &amp; UI — IBM Plex Sans</div><div class="specimen-sans">Structured, accountable delivery for government, infrastructure, and mission-driven organizations.</div></div>
+      <div class="row"><div class="tag">Labels &amp; data — IBM Plex Mono</div><div class="specimen-mono">NAICS 541690 · CAGE PENDING · UEI IN PROCESS</div></div>
+    </div>
+    <p style="margin-top:1.2rem">All three are free, open-source families (Google Fonts). Source Serif carries editorial
+    authority; Plex Sans is the neutral workhorse; Plex Mono signals the technical, procurement-literate voice.</p>
+
+    <!-- USAGE -->
+    <p class="eyebrow">Usage</p>
+    <div class="two">
+      <div class="card do">
+        <h3>Do</h3>
+        <ul>
+          <li>Give the logo generous clear space.</li>
+          <li>Use the reversed (white) logo on ink/slate backgrounds only.</li>
+          <li>Keep ochre as an accent — rules, small marks, one highlighted word.</li>
+          <li>Pair the serif for headings with Plex Sans for body.</li>
+          <li>Use the mono family for codes, labels, and data.</li>
+        </ul>
+      </div>
+      <div class="card dont">
+        <h3>Don't</h3>
+        <ul>
+          <li>Recolor the logo or fill large areas with ochre.</li>
+          <li>Stretch, rotate, or add effects/shadows to the mark.</li>
+          <li>Place the dark logo on a dark background (use the reversed one).</li>
+          <li>Introduce patriotic or tactical colors and imagery.</li>
+          <li>Present "DBA" as part of the public brand.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- NAMING -->
+    <p class="eyebrow">Naming</p>
+    <p><strong>Public brand (everywhere):</strong> Apex Gama Solutions.
+    <br><strong>Legal entity (footer, legal, contracting docs only):</strong> Apex Gama Defense Solutions LLC.
+    <br>"Gama" is intentional — never change it to "Gamma," and never present "DBA" publicly.</p>
+
+    <!-- FILES -->
+    <p class="eyebrow">Files in this kit</p>
+    <div class="files">
+      <b>brand/logo-svg/</b> — scalable vector (web, print, any size)<br>
+      &nbsp;&nbsp;logo-horizontal · logo-primary · logo-stacked · logo-white · logo-mono · icon-mark · favicon · og-cover<br><br>
+      <b>brand/logo-png/</b> — raster (Word, PowerPoint, business cards, social; transparent background)<br>
+      &nbsp;&nbsp;logo-horizontal · logo-white · logo-mono · logo-primary · logo-stacked · icon-mark · favicon-512 · social-cover<br><br>
+      <b>brand/brand-guide.html</b> — this document &nbsp;·&nbsp; <b>brand/README.md</b> — quick reference
+    </div>
+
+    <footer>
+      Apex Gama Solutions is the public brand of Apex Gama Defense Solutions LLC. Brand system v1.0.
+      For print, use SVG where possible; use PNG for office software that can't place SVG.
+    </footer>
+  </div>
+</body>
+</html>
