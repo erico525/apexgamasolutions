@@ -24,7 +24,8 @@
 
   /* ---- Color: accents (restrained) ---------------------------------------- */
   --ochre:      #B06A2C;   /* primary accent — rules, active, small marks      */
-  --ochre-deep: #8A5220;   /* accent hover / emphasis                          */
+  --ochre-deep: #8A5220;   /* accent text / solid-button bg (AA on white)      */
+  --ochre-deeper: #6E4019; /* accent-button hover                              */
   --ochre-soft: #D9B892;   /* accent tint for dark backgrounds                 */
   --steel:      #3E6E8E;   /* secondary/data accent — diagrams & charts only   */
   --steel-soft: #7FA6BE;
@@ -35,7 +36,7 @@
   --surface:       var(--paper-raised);
   --text:          var(--ink);
   --text-muted:    var(--slate-600);
-  --text-subtle:   var(--slate-400);
+  --text-subtle:   var(--slate-500);
   --border:        var(--slate-200);
   --border-strong: var(--slate-400);
   --accent:        var(--ochre);

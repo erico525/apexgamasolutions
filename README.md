@@ -20,6 +20,7 @@ Delivered in this pass (a strategic foundation plus a complete, navigable core s
 - `01-brand-strategy.md` — names, positioning, personality, voice, truthfulness rules
 - `02-information-architecture.md` — sitemap, navigation, per-page hierarchy, expansion plan
 - `03-design-system.md` — logo system, color, type, spacing, components, accessibility, SEO
+- `04-qa-and-review.md` — Phase 5 QA: accessibility (AA), performance, SEO, and executive review
 
 **Identity** — `assets/img/`
 - Logo system: primary, horizontal, stacked, mono, white, icon mark, favicon, social cover

@@ -46,7 +46,10 @@
       if (!drop.contains(e.target)) closeDrop();
     });
     document.addEventListener("keydown", function (e) {
-      if (e.key === "Escape" || e.keyCode === 27) closeDrop();
+      if ((e.key === "Escape" || e.keyCode === 27) && dToggle.getAttribute("aria-expanded") === "true") {
+        closeDrop();
+        dToggle.focus();
+      }
     });
   }
 
