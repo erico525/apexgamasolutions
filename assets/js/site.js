@@ -1,4 +1,4 @@
-/* Apex Gama Solutions — minimal progressive enhancement.
+/* Apex Gama Defense Solutions — minimal progressive enhancement.
    The site is fully functional without JS; this only improves the mobile nav
    and stamps the current year. No framework, no dependencies. */
 (function () {

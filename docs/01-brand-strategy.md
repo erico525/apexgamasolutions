@@ -1,5 +1,5 @@
 # Brand Strategy
-### Apex Gama Solutions
+### Apex Gama Defense Solutions
 *Phase 1 deliverable.*
 
 ---
@@ -8,7 +8,7 @@
 
 | Use | Form |
 |---|---|
-| **Public brand** (everywhere) | **Apex Gama Solutions** |
+| **Public brand** (everywhere) | **Apex Gama Defense Solutions** |
 | **Legal entity** (footer, privacy, terms, contracting, legal docs only) | Apex Gama Defense Solutions LLC |
 
 - Never present "DBA" as part of the public brand.
@@ -19,7 +19,7 @@
 
 ## 2. Positioning statement
 
-> **Apex Gama Solutions is a disciplined operational-support partner for government,
+> **Apex Gama Defense Solutions is a disciplined operational-support partner for government,
 > infrastructure, and mission-driven organizations.**
 
 We are deliberately **not** positioned as "a consulting firm" and **not** as "a security

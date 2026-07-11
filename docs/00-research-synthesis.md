@@ -1,5 +1,5 @@
 # Research Synthesis
-### Apex Gama Solutions — Public Identity Program
+### Apex Gama Defense Solutions — Public Identity Program
 *Phase 1 deliverable. Prepared by the engagement team (Brand Strategy, Art Direction, Federal Proposal, Information Architecture).*
 
 ---
@@ -8,7 +8,7 @@
 
 Before a single design decision, we surveyed the digital presence of established
 government-services, engineering, infrastructure, and professional-services firms —
-the category Apex Gama Solutions intends to be measured against. The goal was **not**
+the category Apex Gama Defense Solutions intends to be measured against. The goal was **not**
 to copy any of them. It was to isolate the *recurring signals* that make a visitor —
 particularly a contracting officer or a prime's capture lead — conclude within seconds
 that an organization is disciplined, mature, and safe to rely on.
@@ -60,7 +60,7 @@ soldiers, camouflage, shields, eagles, stars, flags-as-decoration).
 
 > *Could this belong to a respected, established government contractor?
 > Could the name be swapped for another without the design falling apart —
-> and if so, what have we failed to make specific to Apex Gama Solutions?*
+> and if so, what have we failed to make specific to Apex Gama Defense Solutions?*
 
 Where a section could not survive that test, it was rebuilt. The answers to
 "what makes it specifically Apex Gama" are the wordmark/mark system, the ochre-on-slate

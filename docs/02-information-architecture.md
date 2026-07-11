@@ -1,5 +1,5 @@
 # Information Architecture & Sitemap
-### Apex Gama Solutions
+### Apex Gama Defense Solutions
 *Phase 1 deliverable.*
 
 ---
@@ -15,7 +15,7 @@
 ## 2. Primary navigation
 
 ```
-Apex Gama Solutions
+Apex Gama Defense Solutions
 ├── Company            (about.html)
 ├── Capabilities       (capabilities.html)
 ├── Contracting        (contracting.html)   ← procurement info (NAICS/PSC/UEI/CAGE/SAM)

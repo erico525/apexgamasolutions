@@ -1,4 +1,4 @@
-/* Apex Gama Solutions — contact form → Supabase.
+/* Apex Gama Defense Solutions — contact form → Supabase.
    Submits an inquiry as a row in the `contact_submissions` table via the
    Supabase REST API. No framework, no build step.
 
@@ -58,8 +58,12 @@
     var payload = {
       name: val("name"),
       organization: val("org"),
+      role: val("role"),
+      agency: val("agency"),
       email: val("email"),
       phone: val("phone"),
+      naics: val("naics"),
+      needed: val("needed"),
       topic: val("topic"),
       message: val("message")
     };

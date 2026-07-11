@@ -1,5 +1,5 @@
 # Supabase Contact Form + Vercel Deploy
-### Apex Gama Solutions
+### Apex Gama Defense Solutions
 
 The website is static. The only dynamic piece is the **contact form**, which
 writes each inquiry to a Supabase table. This document has (1) the database

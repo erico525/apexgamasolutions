@@ -1,5 +1,5 @@
 # Design System
-### Apex Gama Solutions — Visual Language & Component Library
+### Apex Gama Defense Solutions — Visual Language & Component Library
 *Phase 1 deliverable. The tokens defined here are implemented in `assets/css/tokens.css`.*
 
 ---

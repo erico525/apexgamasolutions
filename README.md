@@ -1,6 +1,6 @@
-# Apex Gama Solutions — Corporate Website
+# Apex Gama Defense Solutions — Corporate Website
 
-The public-facing website and identity system for **Apex Gama Solutions**
+The public-facing website and identity system for **Apex Gama Defense Solutions**
 (legal entity: *Apex Gama Defense Solutions LLC*).
 
 This repository contains a static, framework-free website plus the brand and
@@ -93,7 +93,7 @@ the production domain differs from `www.apexgamasolutions.com`.
 
 ## Brand usage (quick reference)
 
-- Public brand everywhere: **Apex Gama Solutions**. Never present "DBA" publicly.
+- Public brand everywhere: **Apex Gama Defense Solutions**. Never present "DBA" publicly.
 - Legal entity only where legally appropriate (footer, legal docs, contracting):
   **Apex Gama Defense Solutions LLC**.
 - "Gama" is intentional — never change it to "Gamma."

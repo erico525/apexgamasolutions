@@ -1,4 +1,4 @@
-# Apex Gama Solutions — Brand Kit
+# Apex Gama Defense Solutions — Brand Kit
 
 Everything you need to use the brand outside the website — in capability
 statements, proposals, PowerPoint, Word, business cards, letterhead, and social
@@ -55,7 +55,7 @@ under "More fonts." For Microsoft Office, download and install the font files.
 
 ## Rules of thumb
 
-- Public brand everywhere: **Apex Gama Solutions**. Never present "DBA" publicly.
+- Public brand everywhere: **Apex Gama Defense Solutions**. Never present "DBA" publicly.
 - Legal entity only where legally required: **Apex Gama Defense Solutions LLC**.
 - "Gama" is intentional — never "Gamma."
 - Keep ochre as an accent; don't fill large areas with it.

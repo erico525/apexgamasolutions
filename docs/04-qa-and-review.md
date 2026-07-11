@@ -1,5 +1,5 @@
 # Phase 5 — Quality Assurance & Final Review
-### Apex Gama Solutions
+### Apex Gama Defense Solutions
 *QA, accessibility, performance, SEO, and executive review of the delivered site.*
 
 ---

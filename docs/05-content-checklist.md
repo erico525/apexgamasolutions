@@ -1,5 +1,5 @@
 # Content Checklist — what the company needs to provide
-### Apex Gama Solutions
+### Apex Gama Defense Solutions
 
 Fill in the blanks below (replace each `______`). Where something doesn't exist
 yet (e.g., no contract vehicles, no certifications), just write **"none yet"** —
