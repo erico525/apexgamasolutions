@@ -1,6 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /docs/
-Disallow: /brand/
 
 Sitemap: https://www.apexgamadefensesolutions.com/sitemap.xml
