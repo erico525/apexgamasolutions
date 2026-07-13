@@ -231,10 +231,12 @@ a:hover { color: var(--ochre); }
     background: var(--paper); border-bottom: var(--hair) solid var(--border);
     padding: var(--space-sm) var(--gutter) var(--space-lg);
     box-shadow: var(--shadow-md);
-    transform: translateY(-120%); transition: transform var(--dur) var(--ease);
+    transform: translateY(-120%); visibility: hidden;
+    transition: transform var(--dur) var(--ease), visibility 0s linear var(--dur);
     max-height: calc(100vh - 4.75rem); overflow-y: auto;
   }
-  .primary-nav[data-open="true"] { transform: translateY(0); }
+  .primary-nav[data-open="true"] { transform: translateY(0); visibility: visible;
+    transition: transform var(--dur) var(--ease); }
   .primary-nav ul { flex-direction: column; align-items: stretch; gap: 0; width: 100%; }
   .primary-nav li { border-bottom: var(--hair) solid var(--border); }
   .primary-nav a { display: flex; align-items: center; min-height: 44px; padding: 0.7rem 0; }
