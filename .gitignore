@@ -1,0 +1,5 @@
+# Audit tooling & artifacts (local only)
+node_modules/
+package.json
+package-lock.json
+audit/

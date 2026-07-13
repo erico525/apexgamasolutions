@@ -1,0 +1,8 @@
+# Keep internal working files out of the public deployment
+docs/
+brand/
+audit/
+node_modules/
+package.json
+package-lock.json
+*.md

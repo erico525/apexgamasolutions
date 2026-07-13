@@ -12,7 +12,7 @@ No gimmicks. Every value below is chosen for a ten-year lifespan and for transfe
 
 ## 2. Logo & mark system
 
-The identity is built on **APEX GAMA SOLUTIONS** set in the display serif with the "SOLUTIONS"
+The identity is built on **APEX GAMA DEFENSE SOLUTIONS** set in the display serif with the "DEFENSE SOLUTIONS"
 descriptor in mono, and an original geometric **mark**.
 
 **Mark concept — "The Apex Datum."** An abstract ascending peak (the *apex* — summit, forward
