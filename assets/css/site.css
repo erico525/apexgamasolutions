@@ -672,6 +672,15 @@ h1, h2, h3, h4 { color: var(--text); }
 .pill { border-color: var(--border); color: var(--slate-300); }
 .pill--accent { color: var(--ochre); border-color: var(--ochre); }
 
+/* components whose light-first base used a now-dark token as TEXT color */
+.cta-band { background: var(--slate-800); color: var(--text); }
+.cta-band h2 { color: var(--text); }
+.cta-band p { color: var(--slate-300); }
+.figure dd { color: var(--text); }
+.process__step .step-index { color: var(--steel-soft); }
+.site-footer a { color: var(--slate-300); }
+.footer-legal, .footer-legal strong { color: var(--slate-300); }
+
 /* forms */
 .field input, .field select, .field textarea { background: var(--slate-900); border-color: var(--border); color: var(--text); }
 .field input::placeholder, .field textarea::placeholder { color: var(--slate-400); }
