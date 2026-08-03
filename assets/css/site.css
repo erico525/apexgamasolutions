@@ -607,3 +607,13 @@ a.cap:hover .cap__more .arrow { transform: translateX(3px); }
 /* ---- Footer legal links ---------------------------------------------------- */
 .footer-meta a { color: var(--slate-300); text-decoration: none; }
 .footer-meta a:hover, .footer-meta a:focus-visible { color: #fff; }
+
+/* ---- Credibility strip (home) --------------------------------------------- */
+.cred-strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-lg);
+  border-top: var(--hair) solid var(--border); border-bottom: var(--hair) solid var(--border);
+  padding-block: var(--space-lg); }
+.cred-strip .stat .num { font-family: var(--font-display); font-weight: 600; font-size: var(--step-3);
+  color: var(--ink); line-height: 1; letter-spacing: -0.01em; }
+.cred-strip .stat .lbl { display: block; margin-top: 0.4rem; font-family: var(--font-mono);
+  font-size: var(--step--1); text-transform: uppercase; letter-spacing: var(--tracking-mono); color: var(--slate-500); }
+@media (max-width: 640px) { .cred-strip { grid-template-columns: 1fr 1fr; gap: var(--space-md); } }
