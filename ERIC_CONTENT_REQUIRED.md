@@ -107,6 +107,6 @@ value (or tell me the answer) and I will replace the marker.
 
 ## 12. Teaming brief
 
-- **NOT YET BUILT** (see status note in the delivery summary). When built it will need:
+- Built at `/teaming-brief.html`. It still needs:
   preferred workshare ranges, available states, mobilization assumptions, and any active teaming
   relationships.
