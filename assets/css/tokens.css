@@ -5,36 +5,36 @@
    ========================================================================== */
 
 :root {
-  /* ---- Color: institutional neutrals -------------------------------------- */
-  --ink:        #141B24;   /* primary text / dark sections (deep blue-slate)   */
-  --slate-900:  #182029;
-  --slate-800:  #1F2A36;   /* dark panels / footer                             */
-  --slate-700:  #2B3A47;
-  --slate-600:  #3C4C5A;   /* secondary text on paper                          */
-  --slate-500:  #556676;
-  --slate-400:  #6E7F8D;   /* muted text / captions                           */
-  --slate-300:  #9AA7B1;
-  --slate-200:  #C7D0D6;   /* hairlines / borders                              */
-  --slate-100:  #DFE4E8;
+  /* ---- Color: dark-forward (night-operations / darkened bridge) ----------- */
+  --ink:        #05080B;   /* deepest surface — bg-ink sections                */
+  --slate-900:  #080C11;   /* ground base                                      */
+  --slate-800:  #0E151D;   /* footer / dark panels                             */
+  --slate-700:  #17212C;   /* raised hover                                     */
+  --slate-600:  #94A2AE;   /* secondary/muted text (light on dark)             */
+  --slate-500:  #7F8E9B;   /* muted text / eyebrow                             */
+  --slate-400:  #6A7883;   /* subtle text                                      */
+  --slate-300:  #B0BCC6;   /* ghost-border text / footer legal                */
+  --slate-200:  #243441;   /* hairlines / borders (steel-dark)                 */
+  --slate-100:  #1B2632;
 
-  --paper:        #F7F5F0; /* primary background — warm stone                  */
-  --paper-raised: #FFFFFF; /* cards / raised surfaces                          */
-  --stone-100:    #ECE8E0; /* alternating section background                   */
-  --stone-200:    #E1DBD0;
+  --paper:        #080C11; /* primary background — abyssal navy-black          */
+  --paper-raised: #0E151D; /* cards / raised surfaces                          */
+  --stone-100:    #0C131B; /* alternating section background                   */
+  --stone-200:    #121A23;
 
-  /* ---- Color: accents (restrained) ---------------------------------------- */
-  --ochre:      #B06A2C;   /* primary accent — rules, active, small marks      */
-  --ochre-deep: #8A5220;   /* accent text / solid-button bg (AA on white)      */
-  --ochre-deeper: #6E4019; /* accent-button hover                              */
-  --ochre-soft: #D9B892;   /* accent tint for dark backgrounds                 */
-  --steel:      #3E6E8E;   /* secondary/data accent — diagrams & charts only   */
+  /* ---- Color: accent (instrument amber, evolved from brand ochre) --------- */
+  --ochre:      #E6A24C;   /* primary accent — rules, active, small marks      */
+  --ochre-deep: #EBAC60;   /* accent text / links on dark                      */
+  --ochre-deeper: #F2C588; /* accent hover                                     */
+  --ochre-soft: #E6A24C;   /* accent on dark grounds                           */
+  --steel:      #5E86A0;   /* secondary/data accent                            */
   --steel-soft: #7FA6BE;
 
   /* ---- Semantic assignments ---------------------------------------------- */
   --bg:            var(--paper);
   --bg-alt:        var(--stone-100);
   --surface:       var(--paper-raised);
-  --text:          var(--ink);
+  --text:          #EAEEF2;
   --text-muted:    var(--slate-600);
   --text-subtle:   var(--slate-500);
   --border:        var(--slate-200);
@@ -91,9 +91,8 @@
   --rule: 2px;
   --radius: 2px;         /* near-square; no rounded-card aesthetic             */
   --radius-none: 0;
-  --shadow-sm: 0 1px 2px rgba(20, 27, 36, 0.06),
-               0 1px 1px rgba(20, 27, 36, 0.04);
-  --shadow-md: 0 6px 24px -12px rgba(20, 27, 36, 0.28);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 22px 50px -22px rgba(0, 0, 0, 0.75);
 
   /* ---- Motion ------------------------------------------------------------- */
   --ease: cubic-bezier(0.2, 0.6, 0.2, 1);
