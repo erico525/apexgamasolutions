@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Apex Gama Defense Solutions — Capability Statement</title>
+<style>
+  @font-face { font-family:'Source Serif 4'; font-style:normal; font-weight:400 700; src:url('/assets/fonts/source-serif-4.woff2') format('woff2'); }
+  @font-face { font-family:'IBM Plex Sans'; font-style:normal; font-weight:400 600; src:url('/assets/fonts/ibm-plex-sans.woff2') format('woff2'); }
+  @font-face { font-family:'IBM Plex Mono'; font-style:normal; font-weight:400; src:url('/assets/fonts/ibm-plex-mono-400.woff2') format('woff2'); }
+  @font-face { font-family:'IBM Plex Mono'; font-style:normal; font-weight:500; src:url('/assets/fonts/ibm-plex-mono-500.woff2') format('woff2'); }
+
+  :root{
+    --ink:#0E151D; --ink-2:#1B2632; --text:#15191E; --muted:#5B6670;
+    --amber:#B67A1E; --amber-band:#E6A24C; --steel:#3F6178;
+    --rail:#F4F6F7; --line:#D9DFE3; --line-2:#E7EBEE; --paper:#FFFFFF;
+  }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  @page{ size:letter; margin:0; }
+  html,body{ background:#8a8f94; }
+  body{ font-family:'IBM Plex Sans',system-ui,sans-serif; color:var(--text); -webkit-font-smoothing:antialiased; }
+
+  .sheet{
+    width:8.5in; height:11in; background:var(--paper); overflow:hidden;
+    display:flex; flex-direction:column; margin:0 auto;
+  }
+  .mono{ font-family:'IBM Plex Mono',monospace; }
+  .serif{ font-family:'Source Serif 4',Georgia,serif; }
+
+  /* ---- Header band -------------------------------------------------------- */
+  .band{ background:var(--ink); color:#fff; padding:0.5in 0.55in 0.42in; position:relative; }
+  .band::after{ content:""; position:absolute; left:0; right:0; bottom:0; height:3px;
+    background:linear-gradient(90deg,var(--amber-band) 0 22%, rgba(230,162,76,0) 60%); }
+  .band__top{ display:flex; justify-content:space-between; align-items:flex-start; gap:0.4in; }
+  .brand{ display:flex; align-items:center; gap:14px; }
+  .brand svg{ display:block; }
+  .brand__name{ font-family:'Source Serif 4',serif; font-weight:700; font-size:22pt; letter-spacing:0.01em; line-height:1; color:#fff; }
+  .brand__sub{ font-family:'IBM Plex Mono',monospace; font-weight:500; font-size:7pt; letter-spacing:0.34em;
+    text-transform:uppercase; color:var(--amber-band); margin-top:5px; }
+  .band__ids{ text-align:right; font-family:'IBM Plex Mono',monospace; font-size:7.5pt; line-height:1.7; color:#C7D0D8; white-space:nowrap; }
+  .band__ids b{ color:#fff; font-weight:500; }
+  .band__tag{ font-family:'Source Serif 4',serif; font-size:12.5pt; line-height:1.35; color:#E8ECEF; margin-top:16px; max-width:6.2in; }
+
+  /* ---- Body grid ---------------------------------------------------------- */
+  .body{ flex:1; display:grid; grid-template-columns:1.62fr 1fr; }
+  .main{ padding:0.34in 0.42in 0.2in 0.55in; }
+  .rail{ background:var(--rail); border-left:1px solid var(--line); padding:0.34in 0.5in 0.2in 0.4in; }
+
+  .eyebrow{ font-family:'IBM Plex Mono',monospace; font-weight:500; font-size:7.5pt; letter-spacing:0.2em;
+    text-transform:uppercase; color:var(--amber); display:flex; align-items:center; gap:9px; }
+  .eyebrow::before{ content:""; width:16px; height:2px; background:var(--amber); flex:none; }
+  .block + .block{ margin-top:15px; }
+  .lead{ font-family:'Source Serif 4',serif; font-size:11pt; line-height:1.42; color:#22282E; }
+
+  h2.sec{ font-family:'Source Serif 4',serif; font-weight:600; font-size:12.5pt; color:var(--ink);
+    margin:9px 0 6px; letter-spacing:-0.01em; }
+  ul{ list-style:none; }
+  .main li{ position:relative; padding-left:15px; font-size:9.3pt; line-height:1.4; color:#20262C; margin-bottom:5px; }
+  .main li::before{ content:""; position:absolute; left:0; top:6.5px; width:5px; height:5px; background:var(--steel); }
+  .main li b{ font-weight:600; color:var(--ink); }
+
+  /* ---- Rail data ---------------------------------------------------------- */
+  .rail .eyebrow{ color:var(--steel); }
+  .rail .eyebrow::before{ background:var(--steel); }
+  .rgroup + .rgroup{ margin-top:15px; }
+  .row{ padding:6px 0; border-bottom:1px solid var(--line-2); }
+  .row:last-child{ border-bottom:0; }
+  .row dt{ font-family:'IBM Plex Mono',monospace; font-size:6.7pt; letter-spacing:0.14em; text-transform:uppercase; color:var(--muted); }
+  .row dd{ font-size:9.2pt; color:var(--ink); margin-top:2px; line-height:1.35; }
+  .row dd.m{ font-family:'IBM Plex Mono',monospace; font-size:9.5pt; font-weight:500; letter-spacing:0.02em; }
+  .codes dd{ font-family:'IBM Plex Mono',monospace; font-size:8.6pt; line-height:1.5; letter-spacing:0.01em; }
+  .pill{ display:inline-block; font-family:'IBM Plex Mono',monospace; font-size:6.6pt; letter-spacing:0.14em;
+    text-transform:uppercase; color:var(--amber); border:1px solid var(--amber); border-radius:2px; padding:2px 7px; }
+  .rail__head{ display:flex; align-items:center; justify-content:space-between; margin-bottom:4px; }
+
+  /* ---- Footer ------------------------------------------------------------- */
+  .foot{ border-top:2px solid var(--ink); padding:9px 0.55in 12px; display:flex; justify-content:space-between;
+    align-items:baseline; gap:0.4in; }
+  .foot p{ font-size:7.2pt; line-height:1.45; color:var(--muted); max-width:5.6in; }
+  .foot .site{ font-family:'IBM Plex Mono',monospace; font-size:8pt; font-weight:500; color:var(--ink); letter-spacing:0.03em; white-space:nowrap; }
+</style>
+</head>
+<body>
+  <div class="sheet">
+
+    <div class="band">
+      <div class="band__top">
+        <div class="brand">
+          <svg width="46" height="46" viewBox="0 0 46 46" fill="none" aria-hidden="true">
+            <path d="M23 4 L41 40 H30.5 L23 23.5 L15.5 40 H5 Z" fill="none" stroke="#E6A24C" stroke-width="2.2" stroke-linejoin="round"/>
+            <path d="M23 15 L31 32 H15 Z" fill="#E6A24C"/>
+          </svg>
+          <div>
+            <div class="brand__name">Apex Gama Defense Solutions</div>
+            <div class="brand__sub">Capability Statement</div>
+          </div>
+        </div>
+        <div class="band__ids">
+          UEI&nbsp;&nbsp;<b>LN8SWKYL8X81</b><br>
+          CAGE&nbsp;&nbsp;<b>22VC7</b><br>
+          SAM.gov&nbsp;&nbsp;<b>Active</b>
+        </div>
+      </div>
+      <p class="band__tag">Founder-led security, readiness, and continuity for government missions &mdash; protective programs designed, assessed, and strengthened to withstand scrutiny.</p>
+    </div>
+
+    <div class="body">
+      <div class="main">
+        <div class="block">
+          <p class="lead">Apex Gama Defense Solutions is a founder-led security, readiness, and operational-support company. We design, assess, and strengthen protection, training, and resilience programs for government agencies, prime contractors, and mission-driven organizations &mdash; with senior accountability held close to delivery.</p>
+        </div>
+
+        <div class="block">
+          <p class="eyebrow">Core competencies</p>
+          <ul>
+            <li><b>Protective program advisory &amp; assessment</b> &mdash; physical-security and vulnerability assessment, protective concepts, governance, and SOP suites.</li>
+            <li><b>Training, exercises &amp; readiness</b> &mdash; curriculum design, instruction, tabletop through full-scale exercises, and after-action review.</li>
+            <li><b>Risk &amp; resilience</b> &mdash; risk and threat analysis, continuity of operations, and emergency action planning.</li>
+            <li><b>Facility &amp; operations support</b> &mdash; program management, readiness, and coordination across sites and providers.</li>
+          </ul>
+        </div>
+
+        <div class="block">
+          <p class="eyebrow">Differentiators</p>
+          <ul>
+            <li>Founder with <b>17+ years</b> across special operations, protective operations, maritime security, and security-program leadership.</li>
+            <li>Programs managed across <b>35+ international locations</b> with a documented zero-incident record.</li>
+            <li>Senior accountability close to delivery; vetted specialist capacity added against each engagement&rsquo;s requirements.</li>
+            <li>Documented, defensible work products &mdash; assessments, plans, SOPs, and exercise and after-action reports.</li>
+          </ul>
+        </div>
+
+        <div class="block">
+          <p class="eyebrow">Representative deliverables</p>
+          <ul>
+            <li>Security and vulnerability assessments with prioritized findings matrices.</li>
+            <li>Protective-program frameworks, governance matrices, and SOP suites.</li>
+            <li>Exercise plans, training evaluations, and after-action reports.</li>
+            <li>Continuity and emergency action plans with implementation roadmaps.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="rail">
+        <div class="rgroup">
+          <div class="rail__head"><p class="eyebrow">Company</p><span class="pill">Small business</span></div>
+          <dl>
+            <div class="row"><dt>Legal entity</dt><dd>Apex Gama Defense Solutions LLC</dd></div>
+            <div class="row"><dt>UEI</dt><dd class="m">LN8SWKYL8X81</dd></div>
+            <div class="row"><dt>CAGE code</dt><dd class="m">22VC7</dd></div>
+            <div class="row"><dt>SAM.gov</dt><dd>Registered &middot; Active</dd></div>
+            <div class="row"><dt>Business size</dt><dd>Small business (self-certified)</dd></div>
+            <div class="row"><dt>State of formation</dt><dd>California</dd></div>
+          </dl>
+        </div>
+
+        <div class="rgroup codes">
+          <p class="eyebrow">NAICS</p>
+          <dl>
+            <div class="row"><dt>Primary</dt><dd>561210 &mdash; Facilities Support Services</dd></div>
+            <div class="row"><dt>Advisory / risk</dt><dd>541690 &middot; 541990 &middot; 541611</dd></div>
+            <div class="row"><dt>Training</dt><dd>611430 &middot; 611519</dd></div>
+          </dl>
+        </div>
+
+        <div class="rgroup codes">
+          <p class="eyebrow">PSC</p>
+          <dl>
+            <div class="row"><dt>Service codes</dt><dd>R408 &middot; R425 &middot; U008 &middot; M-series</dd></div>
+          </dl>
+        </div>
+
+        <div class="rgroup">
+          <p class="eyebrow">Contact</p>
+          <dl>
+            <div class="row"><dt>Website</dt><dd class="m" style="font-size:8.6pt;">www.apexgamadefense.com</dd></div>
+            <div class="row"><dt>Email</dt><dd class="m" style="font-size:8.6pt;">contact@apexgamadefense.com</dd></div>
+          </dl>
+        </div>
+      </div>
+    </div>
+
+    <div class="foot">
+      <p>Apex self-performs advisory, assessment, design, training, and program management. Guard-force operations, investigations, security-system installation, and construction or trades are delivered through licensed providers and specialist subcontractors. Representative deliverables describe work products Apex produces and are not a claim of specific completed government contracts.</p>
+      <span class="site">&copy; 2026 Apex Gama Defense Solutions LLC</span>
+    </div>
+
+  </div>
+</body>
+</html>
