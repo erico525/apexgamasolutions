@@ -51,7 +51,7 @@
     }
 
     if (!configured) {
-      setStatus("error", "The form is not connected yet. Please email contact@apexgamadefensesolutions.com.");
+      setStatus("error", "The form is not connected yet. Please email contact@apexgamadefense.com.");
       return;
     }
 
@@ -85,10 +85,10 @@
         form.reset();
         setStatus("ok", "Thank you — your inquiry has been received. We will be in touch.");
       } else {
-        setStatus("error", "Something went wrong sending your message. Please email contact@apexgamadefensesolutions.com.");
+        setStatus("error", "Something went wrong sending your message. Please email contact@apexgamadefense.com.");
       }
     }).catch(function () {
-      setStatus("error", "Network error. Please email contact@apexgamadefensesolutions.com.");
+      setStatus("error", "Network error. Please email contact@apexgamadefense.com.");
     }).then(function () {
       setBusy(false);
     });

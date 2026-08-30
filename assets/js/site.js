@@ -53,7 +53,7 @@
     });
   }
 
-  // Contact form — compose an email to contact@apexgamadefensesolutions.com.
+  // Contact form — compose an email to contact@apexgamadefense.com.
   // No backend: submitting opens the visitor's mail client, pre-filled.
   var form = document.querySelector("form.form");
   if (form && (form.getAttribute("action") || "").indexOf("mailto:") === 0) {
@@ -76,7 +76,7 @@
         val("message")
       ];
       window.location.href =
-        "mailto:contact@apexgamadefensesolutions.com?subject=" +
+        "mailto:contact@apexgamadefense.com?subject=" +
         encodeURIComponent(subject) +
         "&body=" +
         encodeURIComponent(lines.join("\n"));
