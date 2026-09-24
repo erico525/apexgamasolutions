@@ -17,6 +17,19 @@
 
   var form = document.getElementById("contact-form");
   if (!form) return;
+
+  // Capture buyer-pathway context from ?source=… (never affects the canonical URL).
+  try {
+    var params = new URLSearchParams(window.location.search);
+    var srcField = document.getElementById("source");
+    var pageField = document.getElementById("page");
+    var allowed = { government:1, prime:1, capabilities:1, "protective-advisory":1,
+      "training-readiness":1, "risk-resilience":1, "facility-support":1 };
+    var src = (params.get("source") || "").toLowerCase();
+    if (srcField) srcField.value = allowed[src] ? src : "";
+    if (pageField) pageField.value = document.referrer || "";
+  } catch (e) { /* no-op */ }
+
   var statusEl = document.getElementById("form-status");
   var button = form.querySelector('button[type="submit"]');
   var configured = SUPABASE_URL.indexOf("http") === 0 && SUPABASE_ANON_KEY.indexOf("<<") !== 0;
@@ -65,6 +78,7 @@
       naics: val("naics"),
       needed: val("needed"),
       topic: val("topic"),
+      source: val("source"),
       message: val("message")
     };
 
