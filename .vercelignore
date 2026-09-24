@@ -1,8 +1,17 @@
-# Keep internal working files out of the public deployment
-docs/
-brand/
-audit/
-node_modules/
-package.json
-package-lock.json
+# Keep internal working files out of the public deployment.
+# NOTE: patterns are ANCHORED to the repo root (leading slash) so they only
+# match top-level directories. An unanchored "docs/" previously also matched
+# assets/docs/ and excluded the Capability Statement PDF from production,
+# which broke the download. Do not remove the leading slashes.
+/docs/
+/brand/
+/audit/
+/node_modules/
+/package.json
+/package-lock.json
+
+# Internal markdown (review notes, README, etc.) — never deployed.
 *.md
+
+# PDF build sources live in assets/docs/; the shipped PDFs live in /assets/.
+*.src.html

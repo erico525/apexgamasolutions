@@ -105,3 +105,17 @@ _Last updated: 2026-09-24_
   inert and falls back to the email address.
 - **Action:** add the real Supabase project URL + anon key, and add `source` and
   `page` columns to the `contact_submissions` table (the form now submits them).
+
+## 16. Capability Statement / Teaming Brief PDFs — final content sign-off
+- The downloadable PDFs are served from
+  `/assets/Apex-Gama-Defense-Solutions-Capability-Statement.pdf` and
+  `/assets/Apex-Gama-Defense-Solutions-Teaming-Brief.pdf` (one canonical file
+  each). They were generated from the site's own verified identifiers and copy
+  (UEI/CAGE/SAM/NAICS/PSC and the existing capability language) — nothing was
+  fabricated. Regenerate with `node` from `assets/docs/*.src.html` if edited.
+- **Confirm:** give the PDF content a final read for release. If the wording
+  should change, edit the `.src.html` source and re-render; keep the same public
+  filename so links don't break.
+- A build-time guard now exists: `scripts/check-downloads.mjs` fails if any
+  referenced download is missing or excluded from deploy. Run it (or wire it to
+  CI) before shipping.
