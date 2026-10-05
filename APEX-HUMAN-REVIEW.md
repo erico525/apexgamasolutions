@@ -119,3 +119,18 @@ _Last updated: 2026-09-24_
 - A build-time guard now exists: `scripts/check-downloads.mjs` fails if any
   referenced download is missing or excluded from deploy. Run it (or wire it to
   CI) before shipping.
+
+## 17. New capability claims — keep substantiation on file
+Two relationship-based capabilities are now published (partners intentionally
+UNNAMED on the public site, per your instruction):
+- **Live-fire range access** — "an established relationship with one of the
+  largest outdoor training ranges in Southern California" (Training page
+  `#venues`, Capabilities hub, homepage hero).
+- **Equipment procurement & sourcing** — "through a vetted supply partner"
+  (Facility & Operations Support page `#procurement`, Capabilities hub,
+  homepage hero).
+- **Keep on file (not published):** the access/use arrangement with the range
+  and the supplier relationship, so either can be substantiated if a CO or prime
+  asks. These are factual relationship claims — confirm they remain current.
+- If either relationship ends, remove the corresponding section(s); the pages
+  read correctly without them.
