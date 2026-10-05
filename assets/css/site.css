@@ -711,3 +711,61 @@ h1, h2, h3, h4 { color: var(--text); }
 .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.85s var(--ease), transform 0.85s var(--ease); }
 .reveal.in { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } }
+
+/* ============================================================================
+   DROPDOWN NAVIGATION — section menus (Company, Capabilities, Contracting, Primes)
+   Top label stays a real link to the section page; children reveal on hover/
+   focus (desktop) and as an indented list (mobile). CSS-driven, no new JS.
+   ========================================================================== */
+.nav-group { position: relative; }
+.nav-group > a { display: inline-flex; align-items: center; gap: 0.38rem; }
+.nav-group__chev { flex: none; opacity: 0.65; transition: transform var(--dur) var(--ease); }
+.nav-group:hover > a .nav-group__chev,
+.nav-group:focus-within > a .nav-group__chev { transform: rotate(180deg); opacity: 1; }
+
+.primary-nav .nav-sub {
+  position: absolute; top: calc(100% + 0.6rem); left: -0.9rem; min-width: 17rem;
+  list-style: none; margin: 0; padding: 0.4rem;
+  background: var(--surface); border: var(--hair) solid var(--border);
+  box-shadow: var(--shadow-md); border-radius: var(--radius); z-index: 120;
+  display: grid; grid-template-columns: 1fr; gap: 1px; align-items: stretch;
+  opacity: 0; visibility: hidden; transform: translateY(-6px);
+  transition: opacity var(--dur) var(--ease), transform var(--dur) var(--ease), visibility 0s linear var(--dur);
+}
+/* keep the rightmost menus inside the viewport */
+.primary-nav .nav-group:nth-last-child(1) .nav-sub,
+.primary-nav .nav-group:nth-last-child(2) .nav-sub { left: auto; right: -0.9rem; }
+.nav-group:hover > .nav-sub,
+.nav-group:focus-within > .nav-sub {
+  opacity: 1; visibility: visible; transform: none;
+  transition: opacity var(--dur) var(--ease), transform var(--dur) var(--ease);
+}
+/* invisible bridge so the cursor can cross the gap without closing */
+.nav-group:hover::before,
+.nav-group:focus-within::before { content: ""; position: absolute; left: 0; right: 0; top: 100%; height: 0.7rem; }
+
+.primary-nav .nav-sub a {
+  display: block; padding: 0.68rem 0.9rem; white-space: nowrap;
+  color: var(--slate-300); font-weight: 500; border-radius: 1px;
+}
+.primary-nav .nav-sub a::after { display: none; }
+.primary-nav .nav-sub a:hover,
+.primary-nav .nav-sub a:focus-visible { background: var(--stone-100); color: var(--text); }
+.primary-nav .nav-sub a[aria-current="page"] { color: var(--ochre-deep); box-shadow: inset 2px 0 0 var(--ochre); }
+
+@media (max-width: 860px) {
+  .nav-group__chev { display: none; }
+  .primary-nav .nav-sub {
+    position: static; opacity: 1; visibility: visible; transform: none;
+    background: transparent; border: 0; box-shadow: none; padding: 0 0 0.5rem;
+    min-width: 0; display: block; transition: none;
+  }
+  .primary-nav .nav-group:nth-last-child(1) .nav-sub,
+  .primary-nav .nav-group:nth-last-child(2) .nav-sub { right: auto; left: auto; }
+  .nav-group:hover::before, .nav-group:focus-within::before { content: none; }
+  .nav-sub li { border: 0 !important; }
+  .primary-nav .nav-sub a {
+    min-height: 40px; padding: 0.5rem 0 0.5rem 1rem; white-space: normal;
+    color: var(--slate-400); font-size: var(--step--1);
+  }
+}
